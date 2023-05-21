@@ -1,0 +1,11 @@
+
+# Server Peak Power / Timestamp of Peak Power 
+# Bios version                          : 2.14.2 
+# iDRAC & Lifecycle Controller version  : 5.10.10.00
+
+racadm get System.Power.Max.Power
+racadm get System.Power.Max.Power.Timestamp
+
+# Graceshutdown
+
+racadm serveraction graceshutdown 
