@@ -7,3 +7,9 @@ $d2 = Get-Date
 $d1.LastBootUpTime -lt $d2.AddDays(-1)
 $d1.LastBootUpTime -lt $d2.AddHours(-1)
 #---------------------------------------------------#
+# Add DNS A name record
+
+Add-DnsServerResourceRecordA -Name "mgmt_dellsw1" -ZoneName "dvc.lgensol.com" -AllowUpdateAny -IPv4Address "10.94.41.151"  -CreatePtr
+Add-DnsServerResourceRecordA -Name "gwINTERNET3" -ZoneName "dvc.lgensol.com" -AllowUpdateAny -IPv4Address "10.94.40.29"  -CreatePtr
+
+#---------------------------------------------------#
