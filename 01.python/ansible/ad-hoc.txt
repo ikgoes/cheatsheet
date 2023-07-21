@@ -1,0 +1,3 @@
+ansible host -m ping
+
+ansible host -m shell -a ""
