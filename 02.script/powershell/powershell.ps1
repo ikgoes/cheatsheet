@@ -37,3 +37,6 @@ Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SNMP\Parameters\
 
 #---------------------------------------------------#
 
+# NFS Mount
+
+mount -o anon 192.168.1.100:/mnt/share Z:
