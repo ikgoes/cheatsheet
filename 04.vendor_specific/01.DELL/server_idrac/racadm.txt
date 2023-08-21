@@ -149,3 +149,12 @@ racadm raid get pdisks -o -p state,size (specific information)
 
 # Get RAID Virtual Disk Information
 racadm raid get vdisks
+
+# TPM Security / Secureboot Check 
+
+racadm get BIOS.SysSecurity.TpmSecurity
+racadm get BIOS.SysSecurity.SecureBoot
+
+# System Model Name, Idrac version, bios version
+
+racadm get BIOS.SysInformation
