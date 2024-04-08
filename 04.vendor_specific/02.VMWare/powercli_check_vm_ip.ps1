@@ -1,0 +1,2 @@
+Connect-VIServer -Server vcenter.vcenter.com -User 'administrator@vsphere.local' -Password 'L--sd--' | out-null
+Get-VM | Select Name, VMHost, @{N="IP Address"; E={@($_.guest.IPAddress -join '|')}}, @{N="Guest OS"; E={@($_.guest.GuestId)}}
