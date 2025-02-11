@@ -1,0 +1,3 @@
+racadm -r <server ip> -u <user> -p <password> serveraction powerstatus
+racadm -r <server ip> -u <user> -p <password> serveraction graceshutdown
+racadm -r <server ip> -u <user> -p <password> serveraction powerup
